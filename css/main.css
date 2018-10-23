@@ -1,0 +1,160 @@
+/* global */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.8em;
+    text-shadow: 2px 2px 2px #BDBDBD;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+h5 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.left{
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* container */
+.container {
+    width: 991px; 
+    margin: 0 auto; 
+}
+/* main section */
+.main {
+    position: relative;
+    border:1px solid #222;
+    padding:0 20px 30px;
+    background: url('../img/landing-page-bg.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 696px;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fafafa;
+}
+.logo img {
+    border-radius: 0 5px 5px 0;
+    width: 175px;
+}
+h5 .icon {
+    width: 35px;
+    vertical-align: bottom;
+    margin-left: 5px
+}
+/* form */
+.form {
+    width: 300px;
+    padding: 20px 10px;
+    background-color: #434446;
+    border-radius: 15px;
+}
+.form h4 {
+    color: #fafafa;
+    text-align: center;
+    margin: 0;
+}
+input[type="email"], input[type="name"], button, .mobile-input {
+    display: block;
+    width: 95%;
+    margin: 10px auto 0;
+}
+input[type="email"], input[type="name"], button, input[type="tel"], .mobile-input span {
+    padding: 12px 10px;
+}
+.mobile-input span, .mobile-input input {
+    display: inline;
+    margin: 0;
+    width: initial;
+}
+.mobile-input span{
+
+} 
+.mobile-input input{
+
+}
+button {
+    background-color: #7daf4c;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 18px;
+}
+/* footer 1 */
+/* footer 2 */
+.verify img {
+    margin-right: 20px;
+}
+@media only screen and (max-width: 1024px) {
+    
+}
+@media only screen and (max-width: 991px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        text-align: center;
+    }   
+}
+@media only screen and (max-width:556px){
+    .container {
+        padding: 30px 15px;
+        width: 100%;  
+      }
+}
+@media only screen and (max-width:425px){
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    h4 {
+        font-size: initial;
+    }
+}
+@media only screen and (max-width:375px){
+    
+}
