@@ -51,14 +51,13 @@ h5 {
 .col-md-6 {
     width: 50%;
 }
-
 .clear {
     clear: both;
 }
 
 /* container */
 .container {
-    width: 991px; 
+    width: 900px; 
     margin: 0 auto; 
 }
 /* main section */
@@ -66,15 +65,18 @@ h5 {
     position: relative;
     border:1px solid #222;
     padding:0 20px 30px;
-    background: url('../img/landing-page-bg.jpg') center center no-repeat;
+    background: url('../img/arab-man.jpg') center center no-repeat;
     background-size: cover;
-    min-height: 696px;
 }
-.logo {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background-color: #fafafa;
+@media only screen and (min-width: 769px){
+    .main {
+        min-height: 696px;
+    }    
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
 }
 .logo img {
     border-radius: 0 5px 5px 0;
@@ -102,19 +104,23 @@ input[type="email"], input[type="name"], button, .mobile-input {
     width: 95%;
     margin: 10px auto 0;
 }
-input[type="email"], input[type="name"], button, input[type="tel"], .mobile-input span {
+input[type="email"], input[type="name"], button, input[type="tel"], .mobile-input span select {
     padding: 12px 10px;
+    border: 0;
 }
 .mobile-input span, .mobile-input input {
-    display: inline;
     margin: 0;
-    width: initial;
+    height: 41px;
 }
 .mobile-input span{
-
+    width:30%;
+    background-color: #ece2c0;
 } 
+.mobile-input span select {
+    width: 100%;
+}
 .mobile-input input{
-
+    width: 70%;
 }
 button {
     background-color: #7daf4c;
@@ -123,20 +129,82 @@ button {
     font-size: 18px;
 }
 /* footer 1 */
+.footer1 img, .verify img {
+    cursor: pointer;
+    opacity: 0.7;
+}
 /* footer 2 */
+.details {
+    font-weight: 600;
+    direction: ltr;
+}
+.fa {
+    margin-top: 5px;
+    margin-right: 5px;
+}
 .verify img {
     margin-right: 20px;
 }
+
 @media only screen and (max-width: 1024px) {
-    
+    .container {
+        width: 800px
+    }
+    .verify img {
+        display: none;
+    }
 }
-@media only screen and (max-width: 991px) {
-    
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 725px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .container{
+        width: 560px;
         text-align: center;
+    }
+    .logo img{
+        margin-top: 40px;
+        width: 150px;
     }   
+    .left, .right {
+        float: none;
+    }
+    .txt-left, .txt-right {
+        text-align: inherit;
+    }
+    .form {
+        margin: 0 auto;
+    }
+    .form .mobile-input span, .form .mobile-input input {
+        float: right;
+        height: 37px;
+    }
+    input[type="email"], input[type="name"], button, input[type="tel"], .mobile-input span select {
+        padding: 10px 5px 10px 0;
+    }
+    /*footer1*/
+    .footer1 {
+        padding: 15px 0;
+    }
+    .footer1 div {
+        margin:0 auto;
+    }
+    .footer1 img {
+        width: 100%;
+    }
+    /*footer2*/
+    .footer2 div {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .footer2 .right {
+        text-align: right;
+    }
+    .footer2 .left {
+        text-align: left;
+    }
 }
 @media only screen and (max-width:556px){
     .container {
@@ -154,7 +222,23 @@ button {
     h4 {
         font-size: initial;
     }
+    .col-sm-9 {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 125px;
+    }
+    .form {
+        width: 250px;
+    }
+    /*footer2*/
+    .footer2 div {
+        width: 90%;
+    }
 }
 @media only screen and (max-width:375px){
-    
+    .form {
+        width: 225px;
+    }
 }
