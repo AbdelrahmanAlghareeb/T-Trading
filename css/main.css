@@ -65,7 +65,7 @@ h5 {
     position: relative;
     border:1px solid #222;
     padding:0 20px 30px;
-    background: url('../img/arab-man.jpg') center center no-repeat;
+    background: url('../img/arab-man.jpg') right center no-repeat;
     background-size: cover;
 }
 @media only screen and (min-width: 769px){
